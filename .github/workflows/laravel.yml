@@ -23,6 +23,4 @@ jobs:
             sleep 2
             sudo docker exec chat_app php artisan migrate
             sudo docker exec chat_app php artisan optimize
-            sudo docker exec chat_app php artisan reverb:start
-            sudo docker exec chat_app php artisan queue:listen
             echo "Deploy Completed!"
